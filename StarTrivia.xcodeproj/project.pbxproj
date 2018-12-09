@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		21222AD121BD515E00F51FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21222AD021BD515E00F51FEA /* AppDelegate.swift */; };
-		21222AD321BD515E00F51FEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21222AD221BD515E00F51FEA /* ViewController.swift */; };
+		21222AD321BD515E00F51FEA /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21222AD221BD515E00F51FEA /* SelectPersonVC.swift */; };
 		21222AD621BD515E00F51FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21222AD421BD515E00F51FEA /* Main.storyboard */; };
 		21222AD821BD516200F51FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21222AD721BD516200F51FEA /* Assets.xcassets */; };
 		21222ADB21BD516200F51FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21222AD921BD516200F51FEA /* LaunchScreen.storyboard */; };
+		21222AEE21BD578E00F51FEA /* Death Star.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21222AED21BD578D00F51FEA /* Death Star.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21222ACD21BD515E00F51FEA /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21222AD021BD515E00F51FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21222AD221BD515E00F51FEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21222AD221BD515E00F51FEA /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
 		21222AD521BD515E00F51FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21222AD721BD516200F51FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21222ADA21BD516200F51FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21222ADC21BD516200F51FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21222AED21BD578D00F51FEA /* Death Star.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Death Star.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		21222ACF21BD515E00F51FEA /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				21222AEC21BD54C900F51FEA /* Model */,
+				21222AEB21BD54C300F51FEA /* View */,
+				21222AEA21BD54BA00F51FEA /* Controller */,
+				21222AE921BD54A900F51FEA /* Resources */,
 				21222AD021BD515E00F51FEA /* AppDelegate.swift */,
-				21222AD221BD515E00F51FEA /* ViewController.swift */,
 				21222AD421BD515E00F51FEA /* Main.storyboard */,
 				21222AD721BD516200F51FEA /* Assets.xcassets */,
 				21222AD921BD516200F51FEA /* LaunchScreen.storyboard */,
 				21222ADC21BD516200F51FEA /* Info.plist */,
 			);
 			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		21222AE821BD549800F51FEA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				21222AED21BD578D00F51FEA /* Death Star.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		21222AE921BD54A900F51FEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21222AE821BD549800F51FEA /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		21222AEA21BD54BA00F51FEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				21222AD221BD515E00F51FEA /* SelectPersonVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		21222AEB21BD54C300F51FEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21222AEC21BD54C900F51FEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +168,7 @@
 				21222ADB21BD516200F51FEA /* LaunchScreen.storyboard in Resources */,
 				21222AD821BD516200F51FEA /* Assets.xcassets in Resources */,
 				21222AD621BD515E00F51FEA /* Main.storyboard in Resources */,
+				21222AEE21BD578E00F51FEA /* Death Star.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21222AD321BD515E00F51FEA /* ViewController.swift in Sources */,
+				21222AD321BD515E00F51FEA /* SelectPersonVC.swift in Sources */,
 				21222AD121BD515E00F51FEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GMKCVRMBDR;
 				INFOPLIST_FILE = StarTrivia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GMKCVRMBDR;
 				INFOPLIST_FILE = StarTrivia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
